@@ -98,7 +98,9 @@ Docker will create `/run/secrets/test-credentials` file within the container whi
 
 Plain-text Values of environment values will not appear directly upon:
 
-    docker inspect -f "{{ .Config.Env }" <container hash / container name>
+```bash
+docker inspect -f "{{ .Config.Env }}" <container hash / container name>
+```
 
 Nor will the values appear in:
 
